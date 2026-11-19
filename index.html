@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yassine Elmostachrik, élève ingénieur en cybersécurité</title>
+  <meta name="description" content="Portfolio de Yassine Elmostachrik, élève ingénieur en cybersécurité à l'EMSI Casablanca : SOC et détection avec Wazuh, MITRE ATT&CK, CTF, IA appliquée à la sécurité. À la recherche d'un stage PFE de 6 mois.">
+  <meta name="theme-color" content="#ECF0F3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E1721" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314212E'/%3E%3Crect x='6' y='6' width='9' height='9' fill='%23F2B93B'/%3E%3Crect x='17' y='6' width='9' height='9' fill='%23ffffff' opacity='.25'/%3E%3Crect x='6' y='17' width='9' height='9' fill='%23ffffff' opacity='.25'/%3E%3Crect x='17' y='17' width='9' height='9' fill='%23F2B93B'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Applique le thème choisi avant l'affichage pour éviter un flash. */
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#projets">Aller aux projets</a>
+
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="#accueil" aria-label="Yassine Elmostachrik, accueil">YE</a>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-btn" type="button" id="theme-btn" aria-label="Changer de thème">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.5-.05-1-.14-1.47A6 6 0 0 1 12.47 3.14 9.2 9.2 0 0 0 12 3z" fill="currentColor"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="accueil">
+    <section class="hero wrap" aria-labelledby="nom">
+      <p class="role">Élève ingénieur en cybersécurité · EMSI Casablanca</p>
+      <h1 id="nom">Yassine<br>Elmostachrik</h1>
+      <p class="lead">
+        Je déploie des SOC, j'écris des règles de détection et je teste la sécurité des applications.
+        Je cherche un <strong>stage PFE de 6 mois en cybersécurité</strong>.
+      </p>
+      <p class="actions">
+        <a class="btn primary" href="#projets">Voir mes projets</a>
+        <a class="btn" href="#contact">Me contacter</a>
+      </p>
+
+      <figure class="matrix-fig">
+        <div class="matrix" id="matrix" role="list" aria-label="Matrice MITRE ATT&CK : deux tactiques couvertes par mes règles de détection"></div>
+        <figcaption>
+          La matrice MITRE ATT&amp;CK. Les deux cases allumées sont les règles Wazuh que j'ai écrites
+          chez X Print : brute-force SSH (T1110) et scans réseau (T1046).
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="block wrap" id="projets" aria-labelledby="h-projets">
+      <h2 id="h-projets">Projets</h2>
+      <div class="filters" id="filters" role="group" aria-label="Filtrer les projets par domaine"></div>
+      <div class="projects" id="projects" aria-live="polite">
+        <noscript><p>Active JavaScript pour voir les projets, ou consulte-les sur <a href="https://github.com/Yassineelmostachrik">GitHub</a>.</p></noscript>
+      </div>
+    </section>
+
+    <section class="block wrap" id="parcours" aria-labelledby="h-parcours">
+      <h2 id="h-parcours">Parcours</h2>
+
+      <h3 class="sub">Expérience</h3>
+      <ol class="timeline">
+        <li>
+          <div class="when">Juillet – août 2026<br><span>2 mois</span></div>
+          <div class="what">
+            <h4>Stagiaire, mise en place d'un SOC</h4>
+            <p class="where">X Print, imprimerie numérique, Casablanca</p>
+            <ul>
+              <li>Mise en place d'un SOC pour superviser la sécurité du serveur de l'entreprise et de <strong>15 machines</strong> connectées à ce serveur.</li>
+              <li>Déploiement de <strong>Wazuh</strong> (agents sur les 15 machines) pour la collecte, l'analyse et la corrélation des logs.</li>
+              <li>Règles de détection personnalisées mappées sur <strong>MITRE ATT&amp;CK</strong> : brute-force SSH (T1110) et scans réseau (T1046).</li>
+              <li>Détection et analyse d'alertes réelles (brute-force SSH, scans) ; simulations d'attaques pour valider les alertes.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Juillet 2025<br><span>1 mois</span></div>
+          <div class="what">
+            <h4>Stagiaire, sécurité et développement d'APIs</h4>
+            <p class="where">HPS, HighTech Payment Systems, Casablanca</p>
+            <ul>
+              <li>Comparateur d'APIs JSON/YAML (SPS JSON contre Sandbox HPS) en Java et Python pour détecter les divergences structurelles.</li>
+              <li>Tests fonctionnels et de sécurité des endpoints avec <strong>Postman</strong> ; rapports de divergences.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Juillet 2024<br><span>1 mois</span></div>
+          <div class="what">
+            <h4>Stagiaire, développement web full-stack</h4>
+            <p class="where">Tech Print Solutions, Casablanca</p>
+            <ul>
+              <li>Site vitrine avec gestion des utilisateurs (Express.js / JSON) et interface dynamique HTML/CSS/JS.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="sub">Formation</h3>
+      <ol class="timeline">
+        <li>
+          <div class="when">Sept. 2024 – aujourd'hui</div>
+          <div class="what">
+            <h4>Cycle ingénieur, Cybersécurité et Infrastructure Réseaux</h4>
+            <p class="where">EMSI, Casablanca</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Sept. 2022 – juin 2024</div>
+          <div class="what">
+            <h4>Cycle préparatoire intégré, 2 ans</h4>
+            <p class="where">EMSI, Casablanca</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Juin 2022</div>
+          <div class="what">
+            <h4>Baccalauréat scientifique, Sciences physiques</h4>
+            <p class="where">Lycée Agdal, Casablanca</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="block wrap" id="certifications" aria-labelledby="h-certs">
+      <h2 id="h-certs">Certifications</h2>
+      <ul class="certs">
+        <li><span class="c-name">Google Cybersecurity Professional Certificate <span class="c-note">(9 cours)</span></span><span class="c-org">Google / Coursera</span><span class="c-date">Oct. 2026</span></li>
+        <li><span class="c-name">Certificat KASBAH, gestion de crise cyber</span><span class="c-org">EMSI × CyberSup</span><span class="c-date">Sept. 2026</span></li>
+        <li><span class="c-name">Cisco Certificate in Ethical Hacking</span><span class="c-org">Cisco Networking Academy</span><span class="c-date">2026</span></li>
+        <li><span class="c-name">Oracle Cloud Infrastructure 2026 Foundations Associate <span class="c-note">(1Z0-1085-26)</span></span><span class="c-org">Oracle</span><span class="c-date">2026</span></li>
+        <li><span class="c-name">AWS Academy Cloud Foundations</span><span class="c-org">AWS Academy</span><span class="c-date">Oct. 2026</span></li>
+      </ul>
+    </section>
+
+    <section class="block wrap" id="competences" aria-labelledby="h-skills">
+      <h2 id="h-skills">Compétences et outils</h2>
+      <dl class="skills">
+        <div><dt>Pentest</dt><dd>Kali Linux, Nmap, Burp Suite, OWASP ZAP, Metasploit</dd></div>
+        <div><dt>SOC / SIEM</dt><dd>Wazuh, analyse de logs, investigation d'alertes</dd></div>
+        <div><dt>Analyse réseau</dt><dd>Wireshark, TCP/IP, DNS, HTTP/HTTPS</dd></div>
+        <div><dt>Audit de sécurité</dt><dd>Nessus, Greenbone/OpenVAS, Lynis</dd></div>
+        <div><dt>Forensique</dt><dd>Autopsy, Volatility 3, FTK Imager, ExifTool</dd></div>
+        <div><dt>Cryptographie</dt><dd>OpenSSL, GnuPG, CyberChef ; chiffrement symétrique et asymétrique, hachage, signatures numériques</dd></div>
+        <div><dt>Cloud</dt><dd>Azure, AWS IAM, Prowler</dd></div>
+        <div><dt>Scripting</dt><dd>Python, Bash, PowerShell</dd></div>
+        <div><dt>IA et données</dt><dd>pandas, NumPy, scikit-learn ; détection d'anomalies, automatisation avec Python</dd></div>
+        <div><dt>Développement et bases de données</dt><dd>Java, C, JavaScript, Node.js, SQL, Oracle (PL/SQL), Git</dd></div>
+        <div><dt>Environnements</dt><dd>Linux, Windows, machines virtuelles, laboratoires de sécurité</dd></div>
+        <div><dt>Langues</dt><dd>Arabe (maternelle), français (B2), anglais (courant)</dd></div>
+      </dl>
+    </section>
+
+    <section class="block wrap contact" id="contact" aria-labelledby="h-contact">
+      <h2 id="h-contact">Contact</h2>
+      <p class="lead">Je cherche un stage PFE de 6 mois en cybersécurité. Écris-moi, je réponds vite.</p>
+      <ul class="links" id="contact-links"></ul>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Yassine Elmostachrik, Casablanca, Maroc.</p>
+    <p>Idée de structure inspirée de <a href="https://github.com/CarterPerez-dev/Cybersecurity-Projects">CarterPerez-dev/Cybersecurity-Projects</a>. Contenu et code de ce site : les miens.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
